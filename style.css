@@ -1,0 +1,11 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.contenedor article{
+    margin-right: 10px;
+    
+}
