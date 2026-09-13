@@ -2,10 +2,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 5px;
+    padding: 10px;
+    background-color: red;
 }
 
 .contenedor article{
     margin-right: 10px;
-    
+    background-color: aliceblue;
 }
