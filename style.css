@@ -13,7 +13,9 @@ body{
     overflow: hidden;
     position: fixed;
     top: 0;
-    background-color: brown;
+    background-color: crimson;
+    padding-right: 760px;
+    left: 0;
 }
 
 .footer-container{
@@ -28,7 +30,7 @@ body{
 .img-title-description {
     overflow: hidden;
     margin-bottom: 10px;
-    margin-top: 100px;
+    margin-top: 130px;
 }
 
 
