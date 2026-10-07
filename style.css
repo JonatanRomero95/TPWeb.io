@@ -1,3 +1,7 @@
+*{
+    font-family: roboto;
+}
+
 body{
     background-image: url(imagenes/rojo.jpg);
     background-size: cover;
@@ -13,7 +17,8 @@ body{
     overflow: hidden;
     position: fixed;
     top: 0;
-    background-color: crimson;
+    background: rgb(2,0,36);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(0,212,255,1) 100%);
     padding-right: 760px;
     left: 0;
 }
