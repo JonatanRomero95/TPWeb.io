@@ -19,12 +19,24 @@ body{
     top: 0;
     background: rgb(2,0,36);
     background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(0,212,255,1) 100%);
-    padding-right: 760px;
+    width: 100%;
     left: 0;
 }
 
-.footer-container{
+.header-container h1{
+    
+    display:inline-flex;
+}
 
+.h1-2{
+    margin-left: 30px;
+}
+
+.footer-container{
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    width: 100%;
 }
 
 .img-title-description img{
