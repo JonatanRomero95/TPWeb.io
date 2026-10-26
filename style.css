@@ -6,6 +6,7 @@ body{
     background-image: url(imagenes/rojo.jpg);
     background-size: cover;
     background-position: center;
+    margin: 0;
 }
 
 .header-container img{
@@ -33,6 +34,7 @@ body{
 }
 
 .footer-container{
+    margin: 0;
     bottom: 0;
     left: 0;
     background-color: red;
@@ -66,7 +68,6 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 120px;
 }
 
 .contenedor article{
@@ -79,4 +80,15 @@ body{
 
 .conteiner{
     margin-top: 120px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.siguiente{
+    margin-left: 163px;
+}
+
+.anterior{
+
 }
