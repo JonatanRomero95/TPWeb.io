@@ -25,7 +25,6 @@ body{
 }
 
 .header-container h1{
-    
     display:inline-flex;
 }
 
@@ -39,6 +38,13 @@ body{
     left: 0;
     background-color: red;
     width: 100%;
+}
+
+.footer-container h3{
+    display:inline-flex;
+    float: right;
+    padding-right: 10px;
+    padding-top: 25px;
 }
 
 .img-title-description img{
@@ -86,9 +92,5 @@ body{
 }
 
 .siguiente{
-    margin-left: 163px;
-}
-
-.anterior{
-
+    margin-left: 663px;
 }

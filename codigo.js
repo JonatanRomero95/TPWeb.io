@@ -1,19 +1,19 @@
 let peliculas = [
     {
-        imagen:"../imagenes peliculas/lore.png",
+        imagen:"../banner_peliculas/lore.jpg",
         pagina:"../paginas/peli8.html",
         titulo:"La maldicion del bosque"
     },
     {
-        imagen:"../imagenes peliculas/antman.jpeg",
+        imagen:"../banner_peliculas/antman.jpg",
         pagina:"../paginas/peli3.html",
         titulo:"Ant man"
     },{
-        imagen:"../imagenes peliculas/scream6.jpg",
+        imagen:"../banner_peliculas/scream6.jpg",
         pagina:"../paginas/peli2.html",
         titulo:"Scream 6"
     },{
-        imagen:"../imagenes peliculas/the-mill.png",
+        imagen:"../banner_peliculas/the_mill.jpg",
         pagina:"../paginas/peli6.html",
         titulo:"The mill"
     }
