@@ -133,6 +133,32 @@ form{
     border: 5px inset gold;
 }
 
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+input{
+    background: none;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+}
+
+button{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    height: 40px;
+    font-size: 16px;
+}
+
 /* Estos son los botones ------------------------------------------------------------------------------------------*/
 
 .siguiente{
