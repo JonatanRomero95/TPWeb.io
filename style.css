@@ -9,6 +9,8 @@ body{
     margin: 0;
 }
 
+/* Esto se encarga de acomodar el header --------------------------------------------------------------------------*/
+
 .header-container img{
     float: left;
     margin-right: 20px;
@@ -28,9 +30,20 @@ body{
     display:inline-flex;
 }
 
+.header-container h3{
+    display:inline-flex;
+    float: right;
+    padding-right: 10px;
+    padding-top: 25px;
+}
+
+/* Esto no se que hace pero tengo miedo de borrarlo ---------------------------------------------------------------*/
+
 .h1-2{
     margin-left: 30px;
 }
+
+/* Esto se encarga del contenido del footer -----------------------------------------------------------------------*/
 
 .footer-container{
     margin: 0;
@@ -47,6 +60,8 @@ body{
     padding-top: 25px;
 }
 
+/* Esto acomoda la imagen y contenedor de cada pelicula individual ------------------------------------------------*/
+
 .img-title-description img{
     float: left;
     padding: 0px 20px;
@@ -58,6 +73,7 @@ body{
     margin-top: 130px;
 }
 
+/* Esto se encarga de acomodar el titulo de cada pelicula individual ----------------------------------------------*/
 
 .movie-title{
     padding-top: 20px;
@@ -65,10 +81,14 @@ body{
     font-size: 24px;
 }
 
+/* Esto se encarga de acomodar el trailer que antes era pelicual, no le cambieel nombre a la clase...--------------*/
+
 .movie{
     display: flex;
     justify-content: center;
 }
+
+/* Esto se encarga de acomodar las peliculas del index ------------------------------------------------------------*/
 
 .contenedor{
     display: flex;
@@ -84,12 +104,36 @@ body{
     border: 1px solid black;
 }
 
+/* Esto se encarga de posicionar el carrusel ----------------------------------------------------------------------*/
+
 .conteiner{
     margin-top: 120px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
+
+/* Esto se encarga del contenido del login ------------------------------------------------------------------------*/
+
+.conteiner_login{
+    margin-top: 120px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner_login h1{
+    text-align: center;
+    font-weight:700;
+}
+
+form{
+    background: white;
+    padding: 40px 0;
+    border: 5px inset gold;
+}
+
+/* Estos son los botones ------------------------------------------------------------------------------------------*/
 
 .siguiente{
     margin-left: 663px;
