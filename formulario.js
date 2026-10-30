@@ -9,8 +9,8 @@ form.addEventListener("submit", e =>{
     let warnings = "";
     let aux = false;
     let expreg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    parrafo.innerHTML = "";
     if(nombre.value.length < 6){
-        console.log("hola")
         warnings += "El nombre no es valido <br>";
         aux = true;
     }
