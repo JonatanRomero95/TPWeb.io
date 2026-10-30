@@ -2,27 +2,35 @@ const nombre = document.getElementById("name"),
 email = document.getElementById("email"),
 pass = document.getElementById("password"),
 form = document.getElementById("form"),
-parrafo = document.getElementById("warnings");
+elementoPadre = document.querySelector(".form"),
+nombrep = document.createElement("p"),
+emailp = document.createElement("p"),
+passp = document.createElement("p"),
+nombreAlert = document.createTextNode("El nombre no es valido"),
+emailAlert = document.createTextNode("El correo no es valido"),
+passAlert = document.createTextNode("La contraseña no es valida");
 
 form.addEventListener("submit", e =>{
     e.preventDefault();
-    let warnings = "";
-    let aux = false;
     let expreg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-    parrafo.innerHTML = "";
     if(nombre.value.length < 6){
-        warnings += "El nombre no es valido <br>";
-        aux = true;
+        elementoPadre.appendChild(nombrep);
+        nombrep.appendChild(nombreAlert);
+    }else if(elementoPadre.contains(nombrep)){
+        elementoPadre.removeChild(nombrep);
     }
+
     if(!expreg.test(email.value)){
-        warnings += "El correo no es valido <br>";
-        aux = true;
+        elementoPadre.appendChild(emailp);
+        emailp.appendChild(emailAlert);
+    }else if(elementoPadre.contains(emailp)){
+        elementoPadre.removeChild(emailp)
     }
+
     if(pass.value.length < 6){
-        warnings += "La contraseña no es valida <br>";
-        aux = true;
-    }
-    if(aux){
-        parrafo.innerHTML = warnings;
+        elementoPadre.appendChild(passp);
+        passp.appendChild(passAlert);
+    }else if(elementoPadre.contains(passp)){
+        elementoPadre.removeChild(passp);
     }
 })

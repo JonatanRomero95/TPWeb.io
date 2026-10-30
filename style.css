@@ -24,6 +24,7 @@ body{
     background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(0,212,255,1) 100%);
     width: 100%;
     left: 0;
+    //z-index: 1;
 }
 
 .header-container h1{
@@ -129,29 +130,27 @@ body{
 
 form{
     background: white;
-    padding: 40px 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
     border: 5px inset gold;
 }
 
 .form{
     width: 100%;
-    margin: auto;
+    
 }
 
 form .grupo{
-    position: relative;
     margin: 45px;
 }
 
 input{
-    background: none;
     font-size: 18px;
     padding: 10px 10px 10px 5px;
-    display: block;
     width: 100%;
 }
 
-button{
+.button{
     display: block;
     width: 80%;
     margin: 10px auto;
