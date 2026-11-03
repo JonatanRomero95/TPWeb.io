@@ -10,12 +10,19 @@ nombreAlert = document.createTextNode("El nombre no es valido"),
 emailAlert = document.createTextNode("El correo no es valido"),
 passAlert = document.createTextNode("La contraseña no es valida");
 
+nombrep.classList.add("error-msg");
+emailp.classList.add("error-msg");
+passp.classList.add("error-msg");
+
 form.addEventListener("submit", e =>{
     e.preventDefault();
     let expreg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+    let todoBien = true;
+
     if(nombre.value.length < 6){
         elementoPadre.appendChild(nombrep);
         nombrep.appendChild(nombreAlert);
+        todoBien = false;
     }else if(elementoPadre.contains(nombrep)){
         elementoPadre.removeChild(nombrep);
     }
@@ -23,6 +30,7 @@ form.addEventListener("submit", e =>{
     if(!expreg.test(email.value)){
         elementoPadre.appendChild(emailp);
         emailp.appendChild(emailAlert);
+        todoBien = false;
     }else if(elementoPadre.contains(emailp)){
         elementoPadre.removeChild(emailp)
     }
@@ -30,7 +38,16 @@ form.addEventListener("submit", e =>{
     if(pass.value.length < 6){
         elementoPadre.appendChild(passp);
         passp.appendChild(passAlert);
+        todoBien = false;
     }else if(elementoPadre.contains(passp)){
         elementoPadre.removeChild(passp);
+    }
+
+    // si esta todo bien lo manda al inicio
+    if(todoBien){
+        alert("Bienvenido " + nombre.value);
+        setTimeout(() => {
+            window.location.href = "index.html";
+        }, 1000);
     }
 })
