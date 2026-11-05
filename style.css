@@ -28,6 +28,10 @@ body{
     z-index: 10;
 }
 
+.header-container nav{
+    display: inline;
+}
+
 .header-container h1{
     display:inline-flex;
 }
@@ -88,7 +92,7 @@ body{
     font-size: 24px;
 }
 
-/* Esto se encarga de acomodar el trailer que antes era pelicual, no le cambieel nombre a la clase...--------------*/
+/* Esto se encarga de acomodar el trailer que antes era pelicula, no le cambie el nombre a la clase...-------------*/
 
 .movie{
     display: flex;
@@ -123,7 +127,7 @@ body{
 
 /* Esto se encarga de posicionar el carrusel ----------------------------------------------------------------------*/
 
-.conteiner{
+.contenedor_carrusel{
     margin-top: 120px;
     margin-bottom: 20px;
     display: flex;
@@ -132,14 +136,14 @@ body{
 
 /* Esto se encarga del contenido del login ------------------------------------------------------------------------*/
 
-.conteiner_login{
+.contenedor_login{
     margin-top: 120px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
 
-.conteiner_login h1{
+.contenedor_login h1{
     text-align: center;
     font-weight:700;
 }
@@ -249,7 +253,7 @@ input:focus{
         flex-direction: column;
         align-items: center;
     }
-    .conteiner{
+    .contenedor_carrusel{
         margin-top: 100px;
     }
     .img-carrusel{

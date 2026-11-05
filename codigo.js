@@ -78,7 +78,7 @@ function carrusel(contenedor){
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    let contenedor = document.querySelector(".conteiner");
+    let contenedor = document.querySelector(".contenedor_carrusel");
     carrusel(contenedor);
 
     // esto pone el año en el footer
