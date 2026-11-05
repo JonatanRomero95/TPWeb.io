@@ -1,5 +1,6 @@
 *{
     font-family: roboto;
+    box-sizing: border-box;
 }
 
 body{
@@ -24,6 +25,7 @@ body{
     background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(0,212,255,1) 100%);
     width: 100%;
     left: 0;
+    z-index: 10;
 }
 
 .header-container h1{
@@ -51,6 +53,11 @@ body{
     left: 0;
     background-color: red;
     width: 100%;
+}
+
+.footer-container p{
+    display: inline;
+    padding-left: 20px;
 }
 
 .footer-container h3{
@@ -88,6 +95,11 @@ body{
     justify-content: center;
 }
 
+/* Esto hace que el trailer no se salga de la pantalla ------------------------------------------------------------*/
+.movie iframe{
+    max-width: 100%;
+}
+
 /* Esto se encarga de acomodar las peliculas del index ------------------------------------------------------------*/
 
 .contenedor{
@@ -102,6 +114,11 @@ body{
     background-color: darkred;
     margin: 0;
     border: 1px solid black;
+}
+
+.contenedor article:hover{
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 /* Esto se encarga de posicionar el carrusel ----------------------------------------------------------------------*/
@@ -149,6 +166,10 @@ input{
     width: 100%;
 }
 
+input:focus{
+    outline: 2px solid darkred;
+}
+
 .button{
     display: block;
     width: 80%;
@@ -157,8 +178,89 @@ input{
     font-size: 16px;
 }
 
+.button:hover{
+    background-color: darkred;
+    color: white;
+    cursor: pointer;
+}
+
 /* Estos son los botones ------------------------------------------------------------------------------------------*/
 
 .siguiente{
-    margin-left: 663px;
+    float: right;
+}
+
+.anterior:hover, .siguiente:hover{
+    background-color: darkred;
+    color: white;
+    cursor: pointer;
+}
+
+/* Esto es para las tablas de las peliculas -----------------------------------------------------------------------*/
+
+.info-pelicula{
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.info-pelicula th, .info-pelicula td{
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.info-pelicula th{
+    background-color: darkred;
+    color: white;
+}
+
+.reparto{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.error-msg{
+    color: red;
+    font-size: 14px;
+    margin: 5px 45px;
+}
+
+.header-container a{
+    color: white;
+    text-decoration: none;
+}
+
+.header-container a:hover{
+    color: gold;
+}
+
+.footer-container a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container a:hover{
+    color: gold;
+}
+
+@media (max-width: 768px){
+    .contenedor{
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteiner{
+        margin-top: 100px;
+    }
+    .img-carrusel{
+        width: 100%;
+        height: auto;
+    }
+    .header-container h1{
+        font-size: 16px;
+    }
+    .movie iframe{
+        width: 100%;
+        height: 300px;
+    }
 }
