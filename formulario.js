@@ -43,11 +43,16 @@ form.addEventListener("submit", e =>{
         elementoPadre.removeChild(passp);
     }
 
-    // si esta todo bien lo manda al inicio
+    // si esta todo bien muestro el cartel y lo mando al incio
     if(todoBien){
-        alert("Bienvenido " + nombre.value);
+        let mensaje = document.createElement("p"),
+        texto = document.createTextNode("Bienvenido " + nombre.value);
+
+        mensaje.classList.add("ok-msg");
+        mensaje.appendChild(texto)
+        elementoPadre.appendChild(mensaje);
         setTimeout(() => {
             window.location.href = "index.html";
-        }, 1000);
+        }, 2000);
     }
 })

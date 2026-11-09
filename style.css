@@ -248,6 +248,14 @@ input:focus{
     color: gold;
 }
 
+/* cartel verde cuando el form sale bien ---------------------------------------------------------------------------*/
+
+.ok-msg{
+    color: green;
+    font-size: 14px;
+    margin: 5px 45px
+}
+
 @media (max-width: 768px){
     .contenedor{
         flex-direction: column;
